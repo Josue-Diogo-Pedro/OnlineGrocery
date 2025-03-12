@@ -67,11 +67,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Images\analytics.png" />
+    <Content Include="Assets\Images\coin.png" />
+    <Content Include="Assets\Images\dashboard.png" />
+    <Content Include="Assets\Images\diet.png" />
+    <Content Include="Assets\Images\groceries.png" />
     <Content Include="Assets\Lib\Bootstrap\css\bootstrap.min.css" />
     <Content Include="Assets\Lib\Bootstrap\css\bootstrap.rtl.min.css" />
     <Content Include="Assets\Lib\Bootstrap\js\bootstrap.bundle.js" />
     <Content Include="Assets\Lib\Bootstrap\js\bootstrap.bundle.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="View\Admin\Categories.aspx" />
+    <Content Include="View\Admin\Dashboard.aspx" />
+    <Content Include="View\Admin\Products.aspx" />
+    <Content Include="View\Admin\Sellers.aspx" />
+    <Content Include="View\Seller\Billing.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -79,11 +89,60 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Admin\AdminMaster.Master.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\AdminMaster.Master.designer.cs">
+      <DependentUpon>AdminMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\Sellers.aspx.cs">
+      <DependentUpon>Sellers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Admin\Sellers.aspx.designer.cs">
+      <DependentUpon>Sellers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Seller\Billing.aspx.cs">
+      <DependentUpon>Billing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="View\Seller\Billing.aspx.designer.cs">
+      <DependentUpon>Billing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="View\Seller\SellerMaster.Master.cs">
+      <DependentUpon>SellerMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="View\Seller\SellerMaster.Master.designer.cs">
+      <DependentUpon>SellerMaster.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Lib\Bootstrap\js\bootstrap.bundle.js.map" />
     <Content Include="Assets\Lib\Bootstrap\js\bootstrap.bundle.min.js.map" />
     <None Include="packages.config" />
+    <Content Include="View\Admin\AdminMaster.Master" />
+    <Content Include="View\Seller\SellerMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -92,12 +151,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Admin\" />
     <Folder Include="App_Data\" />
-    <Folder Include="Assets\Images\" />
     <Folder Include="Assets\JS\" />
     <Folder Include="Models\" />
-    <Folder Include="Seller\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
